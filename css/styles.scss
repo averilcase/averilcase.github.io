@@ -1,2 +1,62 @@
 @import "styles.css";
-// Download sublime text 3
+
+// colors
+$charcoal: #707070;
+$gold: #ccaa64;
+
+// fonts
+$bitter: 'Bitter', serif;
+
+// backgrounds
+$lightBackground: url('../img/groovepaper.png');
+$darkBackground: url('../img/footer_lodyas.png');
+
+
+@font-face {
+	font-family: 'headerFont';
+	src: 
+		local('MAXWELL LIGHT.ttf'),
+		url('../fonts/MAXWELL LIGHT.ttf') 
+		format('truetype');
+}
+
+nav {
+	background: $darkBackground;
+	text-align:center;
+	padding-bottom: 100px;
+
+	img {
+	float: left;
+	}
+
+	h1 {
+		color: #fff;
+		text-transform: uppercase;
+		font-family: 'headerFont', serif;
+		font-size: 400%;
+	}
+	h2 {
+		font-family:'headerFont', serif;
+		color: $gold;
+		margin: 0;
+		font-size: 260%;
+		border-bottom: 2.5px dotted #fff;
+	}
+	a {
+		color: #fff;
+		font-family: 'headerFont', serif;
+
+
+		&:hover {
+			color: $gold;
+		}
+	}
+	ul {
+		padding:0;
+	}
+	li {
+		padding-right:20px;
+		float: right;
+	}
+}
+
