@@ -1,33 +1,115 @@
 @import url(styles.css);
 @font-face {
-  font-family: 'headerFont';
+  font-family: 'headerFontLight';
   src: local("MAXWELL LIGHT.ttf"), url("../fonts/MAXWELL LIGHT.ttf") format("truetype"); }
+@font-face {
+  font-family: 'headerFontRegular';
+  src: local("MAXWELL REGULAR.ttf"), url("../fonts/MAXWELL REGULAR.ttf") format("truetype"); }
+body {
+  margin: 0 auto; }
+
+.container-fluid {
+  padding: 0; }
+
 nav {
   background: url("../img/footer_lodyas.png");
-  text-align: center;
-  padding-bottom: 100px; }
+  padding-top: 20px;
+  padding-bottom: 10px; }
   nav img {
-    float: left; }
+    position: absolute;
+    left: 27%;
+    top: 17%; }
   nav h1 {
+    text-align: center;
+    font-family: 'headerFontLight', sans-serif;
     color: #fff;
     text-transform: uppercase;
-    font-family: 'headerFont', serif;
-    font-size: 400%; }
+    font-size: 450%; }
   nav h2 {
-    font-family: 'headerFont', serif;
+    text-align: center;
+    font-family: 'headerFontLight', sans-serif;
     color: #ccaa64;
-    margin: 0;
-    font-size: 260%;
-    border-bottom: 2.5px dotted #fff; }
-  nav a {
-    color: #fff;
-    font-family: 'headerFont', serif; }
-    nav a:hover {
-      color: #ccaa64; }
+    font-size: 270%;
+    margin: 0; }
+  nav hr {
+    width: 85%;
+    border-top: 3px dotted #fff; }
   nav ul {
+    text-align: center;
     padding: 0; }
   nav li {
-    padding-right: 20px;
-    float: right; }
+    display: inline-block;
+    margin: 10px; }
+    nav li a {
+      color: #fff;
+      font-size: 120%;
+      font-family: 'headerFontLight', sans-serif; }
+      nav li a:hover {
+        color: #ccaa64; }
+
+.navigation {
+  padding: 0; }
+
+#contentHeading {
+  text-decoration-style: dashed; }
+
+#content {
+  padding: 20px 50px 0 50px;
+  background: url("../img/groovepaper.png"); }
+  #content hr {
+    border-top: 3px dotted #707070;
+    width: 70%; }
+  #content img {
+    border: 10px solid #000; }
+  #content p {
+    width: 85%;
+    padding-left: 90px;
+    font-family: "Bitter", serif, serif;
+    color: #707070;
+    font-size: 120%; }
+  #content .thumbnail {
+    border: none;
+    background: url("../img/groovepaper.png"); }
+    #content .thumbnail h2 {
+      padding-left: 90px;
+      font-family: 'headerFontRegular', sans-serif;
+      text-transform: uppercase; }
+      #content .thumbnail h2 a {
+        color: #707070; }
+  #content #contentHeading {
+    color: #707070;
+    font-family: 'headerFontRegular', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 260%; }
+
+#dashed hr {
+  border-top: 3px dashed #707070;
+  margin-bottom: 50px;
+  width: 25%; }
+
+footer {
+  padding-top: 20px;
+  background: url("../img/footer_lodyas.png"); }
+  footer h2 {
+    color: #fff;
+    font-family: 'headerFontRegular', sans-serif;
+    text-transform: uppercase;
+    margin-left: 20%; }
+  footer p {
+    color: #fff;
+    font-family: "Bitter", serif, serif;
+    padding-left: 20%;
+    font-size: 120%; }
+  footer sub {
+    color: #fff; }
+  footer .footerStyle {
+    border-right: 2px dashed #fff; }
+  footer #social {
+    padding-left: 18%; }
+  footer img {
+    margin: 10px; }
+  footer span {
+    color: #ccaa64; }
 
 /*# sourceMappingURL=styles.css.map */

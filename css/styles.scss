@@ -13,50 +13,152 @@ $darkBackground: url('../img/footer_lodyas.png');
 
 
 @font-face {
-	font-family: 'headerFont';
+	font-family: 'headerFontLight';
 	src: 
 		local('MAXWELL LIGHT.ttf'),
 		url('../fonts/MAXWELL LIGHT.ttf') 
 		format('truetype');
 }
+@font-face {
+	font-family: 'headerFontRegular';
+	src: 
+		local('MAXWELL REGULAR.ttf'),
+		url('../fonts/MAXWELL REGULAR.ttf') 
+		format('truetype');
+}
+body {
+	margin:0 auto;
+}
+.container-fluid {
+	padding:0;
+}
 
 nav {
 	background: $darkBackground;
-	text-align:center;
-	padding-bottom: 100px;
-
+	padding-top:20px;
+	padding-bottom:10px;
 	img {
-	float: left;
+		position: absolute;
+		left:27%;
+		top:17%;
 	}
-
 	h1 {
+		text-align:center;
+		font-family: 'headerFontLight', sans-serif;
 		color: #fff;
 		text-transform: uppercase;
-		font-family: 'headerFont', serif;
-		font-size: 400%;
+		font-size: 450%;
 	}
 	h2 {
-		font-family:'headerFont', serif;
+		text-align:center;
+		font-family: 'headerFontLight', sans-serif;
 		color: $gold;
-		margin: 0;
-		font-size: 260%;
-		border-bottom: 2.5px dotted #fff;
+		font-size: 270%;
+		margin:0;
 	}
-	a {
-		color: #fff;
-		font-family: 'headerFont', serif;
-
-
-		&:hover {
-			color: $gold;
-		}
+	hr {
+		width: 85%;
+		border-top:3px dotted #fff;
 	}
 	ul {
+		text-align:center;
 		padding:0;
 	}
 	li {
-		padding-right:20px;
-		float: right;
+		display:inline-block;
+		margin:10px;
+
+		a {
+			color:#fff;
+			font-size: 120%;
+			font-family: 'headerFontLight', sans-serif;
+
+			&:hover {
+			color: $gold;
+			}
+		}
 	}
 }
+.navigation {
+	padding:0;
+}
+#contentHeading {
+	text-decoration-style:dashed;
+}
+#content {
+	padding: 20px 50px 0 50px;
+	background: $lightBackground;
+	
+	hr {
+		border-top:3px dotted $charcoal;
+		width: 70%;
+	}
+	img {
+		border: 10px solid #000;
+	}
+	p {
+		width:85%;
+		padding-left:90px;
+		font-family: $bitter, serif;
+		color: $charcoal;
+		font-size: 120%;
+	}
+	.thumbnail{
+		border:none;
+		background: $lightBackground;
+		h2 {
+			padding-left:90px;
+			font-family: 'headerFontRegular', sans-serif;
+			text-transform: uppercase;
+		a {
+			color:$charcoal;
+			}
+		}
+	}
+	#contentHeading {
+		color:$charcoal;
+		font-family: 'headerFontRegular', sans-serif;
+		text-transform: uppercase;
+		text-align: center;
+		font-size:260%;
 
+	}
+}
+#dashed {
+	hr {
+		border-top:3px dashed $charcoal;
+		margin-bottom:50px;
+		width: 25%;
+	}
+}
+footer {
+	padding-top:20px;
+	background: $darkBackground;
+	h2 {
+		color:#fff;
+		font-family: 'headerFontRegular', sans-serif;
+		text-transform:uppercase;
+		margin-left:20%;
+	}
+	p {
+		color:#fff;
+		font-family: $bitter, serif;
+		padding-left:20%;
+		font-size:120%;
+	}
+	sub {
+		color: #fff;
+	}
+	.footerStyle {
+		border-right: 2px dashed #fff;
+	}
+	#social {
+		padding-left:18%;
+	}
+	img {
+	margin:10px;
+	}
+	span {
+		color: $gold;
+	}
+}

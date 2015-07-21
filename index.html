@@ -9,11 +9,12 @@
 <body>
 	<div class="container-fluid">
 		<div class="row">
-			<div class="col-lg-12">
+			<div class="col-lg-12 navigation">
 				<nav>
-					<img src="img/logo.png" alt="AMC Logo">
+					<img src="img/logo.png" alt="AMC Logo" height="80px" width="80px">
 					<h1>Averil .M. Case</h1>
 					<h2>Website Developer</h2>
+					<hr/>
 					<ul>
 						<li><a href="#">about</a></li>
 						<li><a href="#">contact</a></li>
@@ -22,55 +23,70 @@
 			</div>
 		</div>
 
-		<h2>Recent Projects</h2>
 
-		<div class="row">
-			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-				<a href="http://averil.case.yoobee.net.nz/_Assignments/WE01/public_html/www/index.html"><img src="img/goldway.jpg" alt="Goldway Hotel website"></a>
-				<h2><a href="http://averil.case.yoobee.net.nz/_Assignments/WE01/public_html/www/index.html">Goldway Hotel</a></h2>
-				<p>First web based project created at Yoobee. Very simple website used as an introduction to front-end developing.</p>
+		<div id="content">
+			
+			<div id="dashed">
+				<h2 id="contentHeading">Recent Projects</h2>
+				<hr/>
 			</div>
-			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-				<a href="http://averil.case.yoobee.net.nz/_Assignments/WE02/public_html/www/bookshelfCompendium/index.html"><img src="img/compendium.jpg" alt="Bookshelf Compendium website"></a>
-				<h2><a href="http://averil.case.yoobee.net.nz/_Assignments/WE02/public_html/www/bookshelfCompendium/index.html">Bookshelf Compendium</a></h2>
-				<p>A website directory for new and boutique bookstore locations using the google maps API, geolocation and AJAX.</p>
-			</div>
-		</div>
 
-		<div class="row">
-			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-				<a href="http://averil.case.yoobee.net.nz/_Assignments/WE03/public_html/redfoxBrewery/www/index.php"><img src="img/redfox.jpg" alt="Redfox Brewery website"></a>
-				<h2><a href="http://averil.case.yoobee.net.nz/_Assignments/WE03/public_html/redfoxBrewery/www/index.php">Redfox Brewery</a></h2>
-				<p>An intranet for web based colleagues to communicate. Complete with activity feed, employee profiles and leave submission forms. Achieved by using jQuery, PHP and mySQLi. Login: admin. Password: admin.</p>
+				<div class="row">
+					<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 thumbnail">
+						<a href="http://averil.case.yoobee.net.nz/_Assignments/WE01/public_html/www/index.html"><img src="img/goldway.jpg" alt="Goldway Hotel website"></a>
+						<h2><a href="http://averil.case.yoobee.net.nz/_Assignments/WE01/public_html/www/index.html">Goldway Hotel</a></h2>
+						<hr/>
+						<p>First web based project created at Yoobee. Very simple website used as an introduction to front-end developing.</p>
+					</div>
+					<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 thumbnail">
+						<a href="http://averil.case.yoobee.net.nz/_Assignments/WE02/public_html/www/bookshelfCompendium/index.html"><img src="img/compendium.jpg" alt="Bookshelf Compendium website"></a>
+						<h2><a href="http://averil.case.yoobee.net.nz/_Assignments/WE02/public_html/www/bookshelfCompendium/index.html">Bookshelf Compendium</a></h2>
+						<hr/>
+						<p>A website directory for new and boutique bookstore locations using the google maps API, geolocation and AJAX.</p>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 thumbnail">
+						<a href="http://averil.case.yoobee.net.nz/_Assignments/WE03/public_html/redfoxBrewery/www/index.php"><img src="img/redfox.jpg" alt="Redfox Brewery website"></a>
+						<h2><a href="http://averil.case.yoobee.net.nz/_Assignments/WE03/public_html/redfoxBrewery/www/index.php">Redfox Brewery</a></h2>
+						<hr/>
+						<p>An intranet for web based colleagues to communicate. Complete with activity feed, employee profiles and leave submission forms. Achieved by using jQuery, PHP and mySQLi. Login: admin. Password: admin.</p>
+					</div>
+					<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 thumbnail">
+						<a href="http://averil.case.yoobee.net.nz/_Assignments/WE06/public_html/excel-project-final/www/index.php"><img src="img/excel.jpg" alt="Excel Digital website"></a>
+						<h2><a href="http://averil.case.yoobee.net.nz/_Assignments/WE06/public_html/excel-project-final/www/index.php">Excel Digtial Print</a></h2>
+						<hr/>
+						<p>Basic font-end design, using bootstrap, google maps API and PHP for the backend. Database used for adding, editing and deleting images from gallery.</p>
+					</div>
+				</div>
 			</div>
-			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-				<a href="#"><img src="img/excel.jpg" alt="Excel Digital website"></a>
-				<h2><a href="#">Excel Digtial Print</a></h2>
-				<p>Basic font-end design, using bootstrap, google maps API and PHP for the backend. Database used for adding, editing and deleting images from gallery.</p>
-			</div>
-		</div>
 
 		<footer>
 			<div class="row">
-				<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+				<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 footerStyle">
 					<h2>About Me</h2>
 					<p>Hi! I'm Averil Case. I am a recent graduate from ACG Yoobee school of design - with a diploma in Website Development. I love developing websites and have a passion for teachnology. I have a strong desire to further my knowlege in the web development field, and to meet friendly people in the industry.</p>
 				</div>
-				<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+				<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 footerStyle">
 					<h2>Job Opportunities?</h2>
-					<p>I am always on the lookout for opportunites to further my knowledge in the web developement field. If you're interested in letting me contribute, please send me an e-mail</p>
+					<p>I am always on the lookout for opportunites to further my knowledge in the web developement field. If you're interested in letting me contribute, please <span>send me an e-mail</span></p>
 				</div>
-				<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+				<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
 					<h2>Let's Socialise</h2>
-					<img src="img/linked.png" alt="Linked In">
-					<img src="img/facebook.png" alt="Facebook">
-					<img src="img/twitter.png" alt="Twitter">
+					<div id="social">
+						<img src="img/linked.png" alt="Linked In" width="40px" height="40px">
+						<img src="img/fb.png" alt="Facebook" width="40px" height="40px">
+						<img src="img/twitter.png" alt="Twitter" width="40px" height="40px">
+					</div>
 					<h2>Get in touch</h2>
-					<p>averil.case@gmail.com</p>
+					<p><span>averil.case@gmail.com</span></p>
 				</div>
+			</div>
+			<img src="img/footer-logo.png" alt="Logo">
+			<sub>2015 copyright Averil Case</sub>
 		</footer>
-		<img src="img/footer-logo.png" alt="Logo">
-		<sub>2015 copyright Averil Case</sub>
+		
 		
 	</div>
 
