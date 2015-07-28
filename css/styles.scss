@@ -11,6 +11,10 @@ $bitter: 'Bitter', serif;
 $lightBackground: url('../img/groovepaper.png');
 $darkBackground: url('../img/footer_lodyas.png');
 
+// widths
+$break-small: 320px;
+$break-medium: 768px;
+$break-large: 1000px;
 
 @font-face {
 	font-family: 'headerFontLight';
@@ -26,28 +30,33 @@ $darkBackground: url('../img/footer_lodyas.png');
 		url('../fonts/MAXWELL REGULAR.ttf') 
 		format('truetype');
 }
+
+html, body {
+  width: auto !important;
+  overflow-x: hidden !important;
+}
+
 body {
 	margin:0 auto;
-}
-.container-fluid {
-	padding:0;
 }
 
 nav {
 	background: $darkBackground;
 	padding-top:20px;
 	padding-bottom:10px;
-	img {
-		position: absolute;
-		left:27%;
-		top:17%;
-	}
+
+
 	h1 {
 		text-align:center;
 		font-family: 'headerFontLight', sans-serif;
 		color: #fff;
 		text-transform: uppercase;
-		font-size: 450%;
+		@media only screen and (min-width:$break-small) {
+			font-size: 450%;
+		}
+		@media only screen and (max-width:$break-medium) {
+			font-size:360%;
+		}
 	}
 	h2 {
 		text-align:center;
@@ -81,12 +90,13 @@ nav {
 }
 .navigation {
 	padding:0;
+	text-align:center;
 }
 #contentHeading {
 	text-decoration-style:dashed;
 }
 #content {
-	padding: 20px 50px 0 50px;
+	padding: 20px 0;
 	background: $lightBackground;
 	
 	hr {
@@ -96,25 +106,45 @@ nav {
 	img {
 		border: 10px solid #000;
 	}
-	p {
-		width:85%;
-		padding-left:90px;
-		font-family: $bitter, serif;
-		color: $charcoal;
-		font-size: 120%;
-	}
+
 	.thumbnail{
 		border:none;
 		background: $lightBackground;
+		margin-bottom:0;
+		padding-bottom:50px;
+
 		h2 {
-			padding-left:90px;
 			font-family: 'headerFontRegular', sans-serif;
 			text-transform: uppercase;
 		a {
 			color:$charcoal;
 			}
 		}
+		p {
+				font-family: $bitter, serif;
+				color: $charcoal;
+				font-size: 120%;
+			}
+		@media screen and (min-width: $break-large) {
+			
+			p, h2 {
+				padding-left:90px;
+				width:85%;
+			}
+		}
+		@media only screen and (max-width:$break-large) {
+			
+			p, h2 {
+				text-align:center;
+			}
+		}
+	
+
 	}
+	.excelPadding {
+	padding-bottom:30px;
+	}
+
 	#contentHeading {
 		color:$charcoal;
 		font-family: 'headerFontRegular', sans-serif;
@@ -133,32 +163,54 @@ nav {
 }
 footer {
 	padding-top:20px;
+	padding-bottom:70px;
 	background: $darkBackground;
 	h2 {
 		color:#fff;
 		font-family: 'headerFontRegular', sans-serif;
 		text-transform:uppercase;
-		margin-left:20%;
 	}
 	p {
 		color:#fff;
 		font-family: $bitter, serif;
-		padding-left:20%;
 		font-size:120%;
 	}
 	sub {
 		color: #fff;
 	}
-	.footerStyle {
-		border-right: 2px dashed #fff;
-	}
-	#social {
-		padding-left:18%;
-	}
-	img {
-	margin:10px;
-	}
+
 	span {
 		color: $gold;
+	}
+	img {
+		margin-right:10px;
+	}
+	@media screen and (min-width: $break-large) {
+	
+		p, h2, #social {
+			padding-left:20%;
+		}
+		footer {
+			padding-bottom:50px;;
+		}
+		.footerStyle {
+			border-right: 2px dashed #fff;
+		}
+	}
+	.clearfix {
+		overflow:auto;
+	}
+	@media only screen and (max-width:$break-large) {
+		
+		p, h2 {
+			text-align:center;
+			padding-bottom:20px;
+		}
+		#social {
+			text-align:center;
+		}
+		.footerStyle {
+			border-right: none;
+		}
 	}
 }
