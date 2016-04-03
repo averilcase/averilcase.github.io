@@ -1,138 +1,79 @@
-@import url(styles.css);
-@font-face {
-  font-family: 'headerFontLight';
-  src: local("MAXWELL LIGHT.ttf"), url("../fonts/MAXWELL LIGHT.ttf") format("truetype"); }
-@font-face {
-  font-family: 'headerFontRegular';
-  src: local("MAXWELL REGULAR.ttf"), url("../fonts/MAXWELL REGULAR.ttf") format("truetype"); }
-html, body {
-  width: auto !important;
-  overflow-x: hidden !important; }
+html {
+	background-color: #f8f8f8;
+	}
+#container {
+	background-color: #f8f8f8;
+}
+body{
+	text-align:center;
+	font-family: 'Roboto'!important;
+	background-color: #f8f8f8!important;
+}
+#logo {
+	padding-top: 20px;
+}
+#websites img,
+#misc img {
+	padding: 30px;
+	background-color: #fff;
+}
+#websites img {
+	margin-bottom: 5px;
+}
+#blurb {
+	padding-bottom: 20px;
+	padding-top: 20px;
+}
+#blurb h2 {
+	font-size: 1.5em;
+	line-height: 1.5em;
+	font-weight: 700;
+}
+img {
+	max-width: 550px!important;
+}
 
-body {
-  margin: 0 auto; }
+#contact i {
+	margin-right: 10px;
+	margin-left: 10px;
+	margin-top: 20px;
+	color: #222;
+}
+#copyright {
+	margin-top: 50px;
 
-nav {
-  background: url("../img/footer_lodyas.png");
-  padding-top: 20px;
-  padding-bottom: 10px; }
-  nav h1 {
-    text-align: center;
-    font-family: 'headerFontLight', sans-serif;
-    color: #fff;
-    text-transform: uppercase; }
-    @media only screen and (min-width: 320px) {
-      nav h1 {
-        font-size: 450%; } }
-    @media only screen and (max-width: 768px) {
-      nav h1 {
-        font-size: 360%; } }
-  nav h2 {
-    text-align: center;
-    font-family: 'headerFontLight', sans-serif;
-    color: #ccaa64;
-    font-size: 270%;
-    margin: 0; }
-  nav hr {
-    width: 85%;
-    border-top: 3px dotted #fff; }
-  nav ul {
-    text-align: center;
-    padding: 0; }
-  nav li {
-    display: inline-block;
-    margin: 10px; }
-    nav li a {
-      color: #fff;
-      font-size: 120%;
-      font-family: 'headerFontLight', sans-serif; }
-      nav li a:hover {
-        color: #ccaa64; }
+}
 
-.navigation {
-  padding: 0;
-  text-align: center; }
+@media only screen and (min-width: 600px){
 
-#contentHeading {
-  text-decoration-style: dashed; }
+	.icon-facebook-sign {
+		position: absolute;
+		right: 70px;
+	}
+	.icon-linkedin-sign {
+		position: absolute;
+		right: 100px;
+	}
+	.fa-envelope {
+		position: absolute;
+		right: 40px;
+	}
+	#blurb h2 {
+		font-size: 2.5em;
+		line-height: 1.5em;
+		font-weight: 700;
+	}
+	#blurb {
+		padding-bottom: 80px;
+		padding-top: 40px;
+	}
+	#copyright {
+		font-family: 'Roboto';
+		text-align: left;
+		margin-left: 40px;
+		padding-bottom: 10px;
+	}
+}
 
-#content {
-  padding: 20px 0;
-  background: url("../img/groovepaper.png"); }
-  #content hr {
-    border-top: 3px dotted #707070;
-    width: 70%; }
-  #content img {
-    border: 10px solid #000; }
-  #content .thumbnail {
-    border: none;
-    background: url("../img/groovepaper.png");
-    margin-bottom: 0;
-    padding-bottom: 50px; }
-    #content .thumbnail h2 {
-      font-family: 'headerFontRegular', sans-serif;
-      text-transform: uppercase; }
-      #content .thumbnail h2 a {
-        color: #707070; }
-    #content .thumbnail p {
-      font-family: "Bitter", serif, serif;
-      color: #707070;
-      font-size: 120%; }
-    @media screen and (min-width: 1000px) {
-      #content .thumbnail p, #content .thumbnail h2 {
-        padding-left: 90px;
-        width: 85%; } }
-    @media only screen and (max-width: 1000px) {
-      #content .thumbnail p, #content .thumbnail h2 {
-        text-align: center; } }
-  #content .excelPadding {
-    padding-bottom: 70px; }
-  #content #contentHeading {
-    color: #707070;
-    font-family: 'headerFontRegular', sans-serif;
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 260%; }
 
-#dashed hr {
-  border-top: 3px dashed #707070;
-  margin-bottom: 50px;
-  width: 25%; }
 
-footer {
-  padding-top: 20px;
-  padding-bottom: 70px;
-  background: url("../img/footer_lodyas.png"); }
-  footer h2 {
-    color: #fff;
-    font-family: 'headerFontRegular', sans-serif;
-    text-transform: uppercase; }
-  footer p {
-    color: #fff;
-    font-family: "Bitter", serif, serif;
-    font-size: 120%; }
-  footer sub {
-    color: #fff; }
-  footer span {
-    color: #ccaa64; }
-  footer img {
-    margin-right: 10px; }
-  @media screen and (min-width: 1000px) {
-    footer p, footer h2, footer #social {
-      padding-left: 20%; }
-    footer footer {
-      padding-bottom: 50px; }
-    footer .footerStyle {
-      border-right: 2px dashed #fff; } }
-  footer .clearfix {
-    overflow: auto; }
-  @media only screen and (max-width: 1000px) {
-    footer p, footer h2 {
-      text-align: center;
-      padding-bottom: 20px; }
-    footer #social {
-      text-align: center; }
-    footer .footerStyle {
-      border-right: none; } }
-
-/*# sourceMappingURL=styles.css.map */
