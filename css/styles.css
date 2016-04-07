@@ -122,9 +122,15 @@ img {
 		margin-left: 40px;
 		padding-bottom: 10px;
 	}
-    #websites img {
-    display: inline-block;
-}
+	#websites img {
+	    display: inline-block;
+	}
+	.icon-facebook-sign,
+	.icon-linkedin-sign,
+	.fa-envelope {
+		margin:10px;
+	}
+	
 
 
 }
