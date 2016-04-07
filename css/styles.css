@@ -18,8 +18,12 @@ body{
 
 }
 #logo {
-	padding-top: 20px;
-   
+	margin-top: 40px;
+	margin-bottom: 20px;
+	border: 1px solid #ddd;
+
+}#logo img {
+
 }
 #contact i {
     color: #222;
