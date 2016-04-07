@@ -97,7 +97,7 @@ img {
 
 	.icon-facebook-sign {
 		position: absolute;
-		right: 70px;
+		right: 40px;
 	}
 	.icon-linkedin-sign {
 		position: absolute;
@@ -105,7 +105,7 @@ img {
 	}
 	.fa-envelope {
 		position: absolute;
-		right: 40px;
+		right: 0px;
 	}
 	#blurb h2 {
 		font-size: 2.5em;
