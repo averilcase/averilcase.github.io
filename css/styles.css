@@ -92,7 +92,9 @@ img {
     line-height: 1.5em;
     font-weight: 700;
 }
-
+.img-caption a {
+	color: #222;
+}
 @media only screen and (min-width: 600px){
 
 	.icon-facebook-sign {
