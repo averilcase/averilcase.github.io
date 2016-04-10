@@ -95,6 +95,9 @@ img {
 .img-caption a {
 	color: #222;
 }
+.img-caption a:hover {
+	color: #222;
+}
 @media only screen and (min-width: 600px){
 
 	.icon-facebook-sign {
